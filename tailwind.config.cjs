@@ -1,18 +1,11 @@
 const config = {
-  future: {
-    purgeLayersByDefault: true,
-    removeDeprecatedGapUtilities: true,
-  },
-  plugins: [
+	content: ['./src/**/*.{html,js,svelte,ts}'],
 
-  ],
-  purge: {
-    content: [
-     "./src/**/*.svelte",
+	theme: {
+		extend: {}
+	},
 
-    ],
-    enabled: production // disable purge in dev
-  },
+	plugins: []
 };
 
 module.exports = config;
